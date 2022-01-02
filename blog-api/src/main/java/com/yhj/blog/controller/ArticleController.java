@@ -30,9 +30,9 @@ public class ArticleController {
      */
     @PostMapping
     public Result listArticle(@RequestBody PageParam pageParam){
+        Result result = articleService.listArticle(pageParam);
 
-
-        return articleService.listArticle(pageParam);
+        return result;
     }
 
 
